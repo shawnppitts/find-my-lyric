@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import SearchLyrics from './components/SearchLyrics';
 
 class App extends Component {
     render(){
-        return <p>Hello my name is Shawn!</p>
+        return(
+            <div>
+                <SearchLyrics/>
+            </div>
+        ) 
     }
 }
 

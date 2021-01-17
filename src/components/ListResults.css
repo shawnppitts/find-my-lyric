@@ -1,0 +1,14 @@
+.list-item{
+    padding-top: 15px !important;
+    text-align: left;
+    font-weight: bold;
+}
+
+.list-item-url{
+    text-align: left;
+}
+
+.list-container{
+    padding-right: 100px !important;
+    padding-left: 100px !important;
+}

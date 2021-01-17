@@ -1,0 +1,26 @@
+.search-container{
+    text-align: center;
+    padding: 100px;
+}
+
+.search-lyrics-input{
+    width: 400px;
+}
+
+.search-lyrics-btn{
+    background: red !important;
+    color: white !important;
+}
+
+#load{
+    padding-top: 20px;
+}
+
+.search-container-input{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.search-container-button{
+    display: inline-block;
+}

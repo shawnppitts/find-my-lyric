@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ListResults from './ListResults';
+import './SearchLyrics.css';
 import { Input, Button, List } from 'semantic-ui-react';
 
 class SearchLyrics extends Component{
@@ -36,16 +37,20 @@ class SearchLyrics extends Component{
     
     render(){
         return(
-            <div>
-                <Input 
-                    type="text"
-                    className="search-lyrics-input"
-                    placeholder="Enter a lyric, song, or artist"
-                    value={this.state.value}
-                    onChange={this.handleChange}
-                />
-                <Button onClick={this.getResults}>Generate Lyrics</Button>
-                {!this.state.results ? <p>Going to get your results...</p> : <ListResults data={this.state.results}/>}
+            <div className="search-container">
+                <div className="search-container-input">
+                    <Input 
+                        type="text"
+                        className="search-lyrics-input"
+                        placeholder="Enter a lyric, song, or artist"
+                        value={this.state.value}
+                        onChange={this.handleChange}
+                    />
+                </div>
+                <div className="search-container-button">
+                    <Button className="search-lyrics-btn" onClick={this.getResults}>Generate Lyrics</Button>
+                </div>
+                {!this.state.results ? <p id="load">Going to get your results...</p> : <ListResults data={this.state.results}/>}
             </div>
         ) 
     }
